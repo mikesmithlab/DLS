@@ -4,7 +4,7 @@ APD setup
 """
 
 monitor={'channel':'A',
-        'samples':3000,
+        'samples':30,
         'sample_rate':2000,
         'coupling':'DC',
         'voltage_range':1,
@@ -13,7 +13,7 @@ monitor={'channel':'A',
         }
 
 measure={'channel':'A',
-        'samples':3000,
+        'samples':30,
         'sample_rate':2000,
         'coupling':'DC',
         'voltage_range':1,

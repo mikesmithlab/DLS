@@ -95,7 +95,7 @@ class Window(QMainWindow):
     @pyqtSlot(bool, np.ndarray, np.ndarray)
     def plot_intensity(self,measurement, time, intensity_data):
         """This plot receives signals sent by the picoscope_daq which is running in a separate thread"""
-        self.intensity_line.setData(time, intensity_data)
+        self.intensity_plot.line.setData(time, intensity_data)
         self.mean_intensity = np.mean(intensity_data)
         self.intensity_lbl.setText(str(self.mean_intensity))
 

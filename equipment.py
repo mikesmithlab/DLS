@@ -20,7 +20,7 @@ class DLSLaser(Laser):
 
 class APD(PicoScopeDAQ):
     def __init__(self):
-        super(PicoScopeDAQ, self).__init__()
+        super(APD, self).__init__()
 
 
 
