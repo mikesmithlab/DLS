@@ -42,7 +42,7 @@ class Detector(QRunnable):
         """Detector Data Collection."""
         if self.make_measurement:
             self.apd_obj.quick_setup(measure)
-            for i in range(3):
+            for i in range(self.repeat):
                 time, data, _ = self.apd_obj.start(mode='block')
                 self.signal.signal.emit(self.make_measurement, time, data)
             self.make_measurement=False
